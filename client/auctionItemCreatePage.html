@@ -1,0 +1,21 @@
+<template name="auctionItemCreatePage">
+	You want to sell character with ID {{id}}.<br>
+	Please enter some more information.
+	<form><table>
+		<tr>
+			<td>Item title (required):</td>
+			<td><input type="text" name="title"></td>
+		</tr>
+		<tr>
+			<td>Initial price (ISK):</td>
+			<td><input type="text" name="initialPrice" value="0"></td>
+		</tr>
+		<tr>
+			<td>Minimal overbidding (ISK):</td>
+			<td><input type="text" name="minimalOverbidding" value="500000000"></td>
+		</tr>
+		<tr><td colspan="2" align="center">
+			<input type="submit" value="Start auction!">
+		</td></tr>
+	</table></form>
+</template>

@@ -1,0 +1,73 @@
+<template name="userProfilePage">
+	{{#if currentUser}}
+		<h2>User profile</h2>
+		<table>
+			<tr>
+				<td>E-mail:</td>
+				<td>
+					{{#each emails}}
+						<div>{{address}}</div>
+					{{/each}}
+				</td>
+			</tr>
+			<tr>
+				<td>API keys:</td>
+				<td>
+					<table>
+						{{#each apiKeys}}
+							<tr>
+								<td>Key 1:</td>
+								<td><input type="text" value="{{key1}}" name="key1[]"></td>
+							</tr>
+							<tr>
+								<td>Key 2:</td>
+								<td><input type="text" value="{{key2}}" name="key2[]"></td>
+							</tr>
+						{{/each}}
+						<tr>
+							<td>Key 1:</td>
+							<td><input type="text" name="key1[]" class="newKey"></td>
+						</tr>
+						<tr>
+							<td>Key 2:</td>
+							<td><input type="text" name="key2[]" class="newKey"></td>
+						</tr>
+						<tr><td colspan="2">
+							<div style="text-align: center">
+								<input type="button" value="Save keys" id="saveKeys">
+							</div>
+						</td></tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>Your characters:</td>
+				<td>
+					<table>
+						<thead>
+							<th>ID</th>
+							<th>Name</th>
+							<th></th>
+						</thead>
+						{{#each chars}}
+							<tr>
+								<td>
+									{{characterID}}
+								</td>
+								<td>
+									{{name}}
+								</td>
+								<td>
+									<button class="charInfo">Info</button>
+									<button class="sellChar">Sell</button>
+								</td>
+							</tr>
+						{{/each}}
+					</table>
+				</td>
+			</tr>
+		</table>
+	{{else}}
+		You must be logged in to access this page.
+	{{/if}}
+</template>

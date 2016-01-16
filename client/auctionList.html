@@ -1,0 +1,18 @@
+<template name="auctionList">
+	<table width="100%">
+		<thead>
+			<th>Title</th>
+			<th>No. of bids</th>
+			<th>Lastest bid</th>
+			<th>SP</th>
+			<th>SP/ISK</th>
+			<th>Combat/non-combat ratio</th>
+			<th>Expire</th>
+		</thead>
+		<tbody>
+			{{#each items}}
+				{{> auctionItem}}
+			{{/each}}
+		</tbody>
+	</table>
+</template>

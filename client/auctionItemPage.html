@@ -1,0 +1,27 @@
+<template name="auctionItemPage">
+	<table>
+		<tr>
+			<td>Bid count:</td>
+			<td>{{bidCount}}</td>
+		</tr>
+		<tr>
+			<td>Last bid:</td>
+			<td>{{lastBid}}</td>
+		</tr>
+		<tr>
+			<td>Your bid:</td>
+			<td>
+				<input name="myBid" value="{{recommendedBid}}">
+				<button id="makeBid">Make bid</button>
+			</td>
+		</tr>
+	</table>
+	{{#if ownAuction}}
+		<hr>
+		{{> auctionItemBidList}}
+	{{else}}
+		
+	{{/if}}
+	<hr>
+	{{> charInfoPage (charInfo)}}
+</template>

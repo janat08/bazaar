@@ -1,0 +1,20 @@
+<template name="auctionItemBidList">
+	{{#if moreThanZeroBids}}
+		<table>
+			{{#each bids}}
+				<tr>
+					<td>{{value}}</td>
+					<td>
+						{{#if selected}}
+							Selected
+						{{else}}
+							<button class="selectBid">Select this bid</button>
+						{{/if}}
+						</td>
+				</tr>
+			{{/each}}
+		</table>
+	{{else}}
+		No bids yet.
+	{{/if}}
+</template>

@@ -1,0 +1,88 @@
+<template name="charInfoPage"> 
+	<table>
+		<tr>
+			<td>ID:</td>
+			<td>{{characterID}}</td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td>{{name}}</td>
+		</tr>
+		<tr>
+			<td>Clone name:</td>
+			<td>{{cloneName}}</td>
+		</tr>
+		<tr>
+			<td>Gender:</td>
+			<td>{{gender}}</td>
+		</tr>
+		<tr>
+			<td>Race:</td>
+			<td>{{race}}</td>
+		</tr>
+		<tr>
+			<td>Ancestry:</td>
+			<td>{{ancestry}}</td>
+		</tr>
+		<tr>
+			<td>Bloodline:</td>
+			<td>{{bloodLine}}</td>
+		</tr>
+		<tr>
+			<td>Corporation:</td>
+			<td>{{corporationName}}</td>
+		</tr>
+		<tr>
+			<td>Charisma:</td>
+			<td>{{attributes.charisma}}</td>
+		</tr>
+		<tr>
+			<td>Intelligence:</td>
+			<td>{{attributes.intelligence}}</td>
+		</tr>
+		<tr>
+			<td>Memory:</td>
+			<td>{{attributes.memory}}</td>
+		</tr>
+		<tr>
+			<td>Perception:</td>
+			<td>{{attributes.perception}}</td>
+		</tr>
+		<tr>
+			<td>Willpower:</td>
+			<td>{{attributes.willpower}}</td>
+		</tr>
+		<tr>
+			<td>Free skill points:</td>
+			<td>{{freeSkillPoints}}</td>
+		</tr>
+		<tr>
+			<td>Clone skill points:</td>
+			<td>{{cloneSkillPoints}}</td>
+		</tr>
+		<tr>
+			<td>Skill points:</td>
+			<td>{{skillPoints}}</td>
+		</tr>
+		<tr>
+			<td valign="top">Implants:</td>
+			<td>
+				<ul>
+					{{#each implantsList}}
+						<li>{{typeName}}</li>
+					{{/each}}
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">Skills:</td>
+			<td>
+				<ul>
+					{{#each skillList}}
+						<li>{{typeName}} ({{level}} level)</li>
+					{{/each}}
+				</ul>
+			</td>
+		</tr>
+	</table>
+</template>

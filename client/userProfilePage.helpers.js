@@ -1,0 +1,3 @@
+Template.userProfilePage.helpers({
+	
+}); 

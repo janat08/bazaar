@@ -1,0 +1,22 @@
+<template name="auctionPage">
+	<div>
+		<strong>Filters</strong>:
+		{{#each skillFilters}}
+			<div>
+				<strong>Skill</strong>: {{name}}
+				(<strong>level</strong>:
+				<input type="checkbox" name="level1" class="skillLevelSelector" checked={{level1}}>
+				<input type="checkbox" name="level2" class="skillLevelSelector" checked={{level2}}>
+				<input type="checkbox" name="level3" class="skillLevelSelector" checked={{level3}}>
+				<input type="checkbox" name="level4" class="skillLevelSelector" checked={{level4}}>
+				<input type="checkbox" name="level5" class="skillLevelSelector" checked={{level5}}>)
+				<button class="removeSkillFilter">Remove</button>
+			</div>
+		{{/each}}
+		<div>
+			<strong>Skill</strong>: <input class="skillSelector" name="skillFilter">
+			<button class="addSkillFilter">Add filter</button>
+		</div>
+	</div>
+	{{> auctionList}}
+</template>

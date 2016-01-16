@@ -1,0 +1,9 @@
+<template name="headerToolbar">
+	<ul id="headerMenu">
+		<li>{{> loginButtons}}</li>
+		{{#if currentUser}}
+			<li><a href="{{pathFor 'userProfilePage'}}">User profile</a></li>
+		{{/if}}
+		<li><a href="{{pathFor 'auctionPage'}}">Auction</a></li>
+	</ul>
+</template>
