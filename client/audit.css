@@ -1,0 +1,1297 @@
+#mailContents > #killmail {
+	margin-top: 1px;
+}
+
+a.inactive_acct, a.inactive_acct:hover, a.inactive_acct:visited,a.inactive_acct:visited:hover {
+	font-weight: bold;
+	color: #FF8F33;
+}
+
+a.inactive_acct > span {
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+div.skills_container {
+	min-width:1150px; 
+	width: auto !important; 
+	width: 1150px;
+	position: relative;
+}
+
+table.fancy tr > th {
+	white-space: nowrap;
+}
+
+#assetsSearchForm > form > input[type="text"] {
+	width: 378px;
+	margin-right:5px;
+}
+
+#assetsSearchForm > form {
+	position: relative;
+}	
+
+#assetsSearchForm > form > #suggestions {
+	width: 372px;
+	position: absolute;
+	left: 0px;
+	top: 22px;
+	z-index: 100;
+	border: 1px solid white;
+	background: black;
+	padding:3px;
+	padding-bottom: 10px;
+}
+
+#assetsSearchForm > form > #suggestions > strong {
+	position: absolute;
+	left: 10px;
+	bottom: -5px;
+	z-index: 101;
+	background: black;
+	padding:1px;
+	font-size: 80%;
+}
+
+span.error {
+	font-weight: bold;
+	color:red;
+}
+
+#assetsSearchForm > form > #suggestions  a, #assetsSearchForm > form > #suggestions  a:visited {
+	color: #0f0;
+	width: 100%;
+	display: inline-block;
+}
+
+#assetsSearchForm > form > #suggestions  a:hover, #assetsSearchForm > form > #suggestions  a:visited:hover {
+	background-color: #26a;
+	color:#0f0;
+	border: 0px;
+}
+
+#assetsSearchForm > form > input[type="submit"] {
+	width: 45px;
+	margin-right:5px;
+}
+
+#assetsSearchForm > form > input[type="button"] {
+	width: 65px;
+}
+
+#assetSearchInfo {
+	position:fixed;
+	border: 1px dashed #999;
+	top: 0px;
+	left: 0px;
+	margin: 4px;
+	padding: 4px;
+	font-weight: bold;
+	background-color: black;
+	z-index: 100;
+}
+
+a.tooltip > span > table, a.tooltip > span > table > tr, a.tooltip > span > table >td {   
+	background-color: black;
+}
+
+tr.asset_loc, tr.asset_loc td, tr.asset_loc th {
+	background-color: #151515;
+	cursor:pointer;
+}
+
+td.jr_price_pos, td.jr_price_neg, td.journal_balance {
+	white-space: nowrap;
+	text-align: right;
+}
+
+td.jr_price_pos {
+	color: #007700;
+}
+
+td.jr_price_neg {
+	color: #BB0000;
+}
+
+td.skills_tab, div.skilllist {
+	vertical-align: top;
+	background-color: #07070C;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	-moz-border-top-left-radius: 5px 5px;
+	-moz-border-top-right-radius: 5px 5px;
+}
+
+tr.asset_loc th {
+	text-align: left;
+	padding-left: 5px;
+	font-weight: normal;
+}
+
+tr.asset_loc > th > span {
+   color: #0a2;
+	font-weight: bold;
+}
+
+tr.asset_loc:hover > th > span {
+   color: #0f2;
+}
+
+td.itemc {
+	text-align: right;
+}
+
+tr.asset_loc:hover th[scope=row], tr.asset_loc:hover td {
+	background-color: #444;
+	color: #0d2;
+}
+
+span.assets_stinfo {
+	font-size: 80%;
+	text-transform: uppercase;
+	font-variant: small-caps;
+}
+
+table.skill_list {
+	font-size: 80%;
+	border-collapse: collapse;
+}
+
+table.skill_list tr.header {
+	cursor: pointer;
+}
+
+table.skill_list th[scope=row] {
+	text-align: left;
+	font-weight: normal;
+	color: #0a2;
+	padding-left: 4px;
+}
+
+table.skill_list tr.header:hover th[scope=row], table.skill_list tr.header:hover td {
+	background-color: #444;
+	color: #0d2;
+}
+
+div.locitems {
+	padding-left: 10px;
+		line-height: 1.1;
+}
+
+tr.alt_own_row td, tr.alt_own_row,tr.alt_own_row th {
+	color: #FFEA00;
+}
+
+div.subitems {
+	border-bottom: 1px solid #444;
+	border-left: 1px solid #888;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-left: 5px;
+	padding-left: 5px;
+	background-color: #111;
+	line-height: 1.1;
+}
+
+/* showinfo font stuff */
+.eveFontSize8  { font-size: 8px;}
+.eveFontSize9  { font-size: 9px;}
+.eveFontSize10 { font-size: 10px;}
+.eveFontSize11 { font-size: 11px;}
+.eveFontSize12 { font-size: 12px;}
+.eveFontSize14 { font-size: 14px;}
+.eveFontSize18 { font-size: 16px;}
+.eveFontSize24 { font-size: 18px;}
+.eveFontSize30 { font-size: 20px;}
+.eveFontSize36 { font-size: 24px;}
+
+.eveFontffffff { color: White;}
+.eveFontb2b2b2 { color: Silver;}
+.eveFont4c4c4c { color: Gray;}
+.eveFont000000 { color: Black;}
+.eveFontffff00 { color: Yellow;}
+.eveFont00ff00 { color: Green;}
+.eveFontff0000 { color: Red;}
+.eveFont0000ff { color: Blue;}
+.eveFont7f7f00 { color: #7f7f00;} /* dark yellow */
+.eveFont007f00 { color: #007f00;} /* dark green */
+.eveFont7f0000 { color: #7f0000;} /* dark red */
+.eveFont00007f { color: #00007f;} /* dark blue */
+.eveFont7f007f { color: #7f007f;} /* dark magenta */
+.eveFont00ffff { color: #00ffff;} /* cyan */
+.eveFontff00ff { color: #ff00ff;} /* magenta */
+.eveFont007fff { color: #007fff;} /* light blue */
+
+table.itemlist {
+	font-size:85%;
+}
+
+
+.force-wrap {
+ word-break: break-all; 
+ word-wrap: break-word;
+}
+ 
+table.itemlist  tr > td {
+	white-space: nowrap;
+}
+
+table.itemlist tr > td > b {
+	white-space: normal;
+}
+
+pre.updatetext {
+	font-family: Georgia;
+}
+
+a.showinfo, a.showinfo:visited, a.showinfo_img, a.showinfo_img:visited  {
+	color: #91CCFF;
+	position: relative;
+}
+
+a.showinfo_img img.icon {
+	position: absolute;
+	top: -1px;
+	right: 1px;
+	visibility: hidden;
+	opacity:1;
+}
+
+a.showinfo img.icon {
+	position: absolute;
+	visibility: hidden;
+	right: -15px;
+	top: 2px;
+	opacity:1;
+}
+
+a.showinfo_img:hover, a.showinfo_img:visited:hover, a.showinfo:hover, a.showinfo:visited:hover {
+	color: #fff;
+	background: none;
+	border: 0px;
+	text-decoration: none;
+}
+
+a.showinfo:hover img.icon, a.showinfo_img:hover img.icon {
+	visibility: visible;
+}
+
+span.igblinks {
+	font-size: 80%;
+	color: #999;
+}
+
+span.igblinks b {
+	color: white;
+}
+
+/*
+span.mail_text > a.showinfo:hover,  span.mail_text >  a.showinfo:visited:hover {
+	color: #fff;
+	background: url(info.gif) no-repeat;
+	background-position:left; 
+	padding-right: 0px;
+	padding-left: 14px;
+	text-decoration: none;
+	border: 0px;
+}*/
+
+div.labelfix {
+	left: 2px;
+	clear: both;
+}
+
+h2.onepage_header {
+	font-weight: bold;
+	font-family: arial;
+}
+
+h2.onepage_header a {
+	font-size: 70%;
+	font-weight: bold;
+}
+
+span.fitshiptype{
+	font-weight: bold; 
+	font-variant: small-caps;
+	font-size: 220%; 
+	white-space: nowrap; 
+	padding-left: 5px;
+}
+
+div.labelfix input {
+	float: left;
+}
+
+.fancy-text {
+	font-weight: bold; 
+	font-size: 90%; 
+	font-variant: small-caps;
+}
+
+a.wizlink {
+	font-weight: bold; 
+	font-size: 90%; 
+	font-variant: small-caps;
+	color: #0c0;
+}
+
+a.wizlink:visited{
+	color: #0c0;
+}
+
+img.jn-logo {
+	display:inline-block; 
+	float: right; 
+	height: 140px;
+}
+
+.tooltipII {
+ position: relative; 
+ cursor: default;
+}
+
+span.ccpstyle {
+	margin: 0px;
+	padding: 0px;
+}
+
+.tooltipII strong {   
+ /* hidden desc span */
+ position: absolute;
+ background-color: white;
+ text-decoration: none;
+ visibility: hidden;
+ width: 200px; 
+}
+
+.tooltipII:hover strong { 
+ /* ... style when hovered (shows up) */
+ visibility: visible;
+ color: black;
+ text-decoration: none;
+ background-color: #dddddd;
+ top: 15px;     /* dist from top */
+ left: 4px;     /* dist from left side of parent - do not remove */
+ padding: 2px; 
+ z-index: 50;   /* causes it to pop over other objects */
+ border: 1px solid black;
+}
+
+a.fittinglink, a.fittinglink:visited {
+	font-weight: bold;
+	color: #00AAFF;
+	text-decoration: underline;
+}
+
+h5.fittingheading {
+	display: block;
+	padding: 1px;
+	margin: 1px;
+	width: 99%;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	background-color: #333;
+	color: #ddd;
+}
+
+
+a.fittinglink:hover, a.fittinglink:visited:hover {
+	color: #0044FF;
+	background: #69D2FF;
+}
+
+span.contractlink {
+	font-weight: bold;
+	color: orange;
+}
+
+span.fleetlink {
+	font-weight: bold;
+	color: red;
+}
+
+span.killinfolink {
+	font-weight: bold;
+	color: orange;
+}
+
+/**********************************************************************************/
+
+div.mailDiv {
+	display: none;
+	position: fixed;
+   top:10%;
+   left:15%;
+   width:70%;
+	padding: 4px;
+	border: 2px solid;
+	min-width: 300px;
+	z-index:100;
+	background-color: #222;
+	height: 80%;/***************************/
+	overflow: auto;
+}
+
+div.fade_div {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 90;
+	opacity:0.7;
+	background-color: #222;
+}
+
+
+span.mail_text {
+	font-size: 80%;
+}
+
+span.mail_header{
+	font-size: 90%;
+}
+
+a.exitbutton, a.exitbutton:visited  {
+	display: block;
+	position: absolute;
+   top:1px;
+   right:2px;
+	z-index:101;
+	height: 15px;
+	width: 15px;
+	background-color: #C40000;
+	color: white;
+	text-align: center;
+	font-weight: normal;
+	font-family: "arial black","impact",sans-serif;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-size: 15.5px;
+}
+
+a.exitbutton:hover, a.exitbutton:visited:hover {
+	background-color: red;
+	text-decoration: none;
+}
+
+div.maint-warning > a.exitbutton {
+	top: 2px;
+	font-size:15px;
+}
+
+div.maint-warning {
+	position: fixed;
+ 	z-index: 100;
+   display: block;
+   padding: 5px 1% 5px 1%;
+   margin-bottom: 5px;
+	left: 5px;
+   width: 96%;
+   color: black;
+   background-color: yellow;
+   	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+div.maint-warning > a.smallexit {
+	padding-top:5px;
+	font-size:70%;
+	color: red;
+}
+
+div.maint-warning > span.maint-content {
+	display: block;
+	width: 98%;
+	padding-right: 18px;
+
+}
+
+/*
+#mailView_fade {
+ font-weight: bold;
+ color: black;
+ font-size: 110%;
+ letter-spacing: 1px;
+ padding-left: 7px;
+ text-shadow: -2px 0 yellow, 0 2px yellow,
+      2px 0 yellow, 0 -2px yellow;
+}*/
+
+
+
+/******************************/
+
+.skilltab_current, .skilltab > div {
+	padding: 5px 5px 0px 5px;
+	display: inline-block;
+	margin:  5px 5px 0px 5px;
+	border: 1px solid transparent;
+	border-bottom: 0px;
+	font-size: 135%;
+	font-family: Impact;
+	letter-spacing: .5px;
+	color: #4580FF;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	-moz-border-top-left-radius: 3px 3px;
+	-moz-border-top-right-radius: 3px 3px;
+}
+
+.skilltab_current {
+	border: 1px solid white;
+	border-bottom: 0px;
+	background-color: #222;
+	color: white;
+}
+
+.skilltab:hover,.skilltab:hover:visited {
+	background: none;
+	text-decoration: none;
+	border: 0px;
+}
+
+.skilltab:hover > div {
+	border: 1px solid white;
+	border-bottom: 0px;
+	background-color: #222;
+	color: #78D0FF;
+}
+
+/**************************************************************************/
+
+.charsheet_views{
+ font-size:85%;
+ margin-bottom: 2px; 
+}
+
+
+.skillsHR {
+width: 100%; 
+border-top: 2px solid #aaa;
+}
+
+.parties, .parties th {
+	border: 1px solid grey;
+}
+
+.parties th {
+	padding: 2px;
+}
+.miniorders td{
+	text-align: center;
+}
+
+.miniorders td,.miniorders  tr{
+	border: 1px solid grey;
+}
+
+/**************************************************************************/
+
+span.infobar {
+	font-size:80%;
+	
+}
+
+table.attrs {
+	/*font-weight: bold;*/
+	width:100%;
+	font-size: 80%; 
+	text-align: center;
+	border-top: 2px solid #555;
+	border-bottom: 2px solid #555;
+}
+
+table.attrs  td,table.attrs  th {
+	text-align: center;
+	border: 1px solid #333;
+}
+
+table.attrs  th {
+font-weight: bold;
+}
+
+span.updated_text {
+	font-size:70%;
+}
+
+tr.seccontractrow {
+cursor: pointer; 
+border-bottom: 7px solid;
+border-top: 2px solid;
+}
+
+.fixheight, .fixheight a{
+ font-family: helvetica,arial,sans-serf;
+ padding: 0px;
+ margin: 2px;
+ line-height: 1;
+ letter-spacing: -.3px;
+}
+
+span.disabled_page {
+	color: #999999;
+}
+
+span.current_page {
+	color: white;
+}
+
+span.value {
+	font-size:95%;
+	white-space: nowrap;
+	float: right;
+	text-align: right;
+}
+
+span.contract_items {
+	display:inline-block;
+	text-overflow:ellipsis;
+	overflow:hidden; 
+	white-space:nowrap;
+	width: 450px;
+	/*color: #ddd;*/
+}
+
+
+table.skills_table {
+	font-size:95%; 
+   /*width:970px;*/
+	display: inline-block;
+	border-collapse: separate;
+	border-spacing: 10px;
+	margin: 3px;
+}
+
+td.journal_reason {
+	max-width: 600px;
+}
+
+tr.contractitemsrow {
+	border-top: #888 2px solid;
+	border-bottom: #aaa 5px solid;
+}
+
+.contractitemsrow:hover span {
+	color: #fff;
+}
+
+tr.couriertablerow {
+	border-bottom: #aaa 6px solid;
+}
+
+tr.corp_entry_row {
+	color: #00AAFF;
+}
+
+tr.corp_entry_row td, .corp_entry_row th{
+	color: #00AAFF;
+}
+
+tr.corp_entry_row th[scope=row] {
+	color: #00AAFF;
+}
+
+table.contracts_wtt {
+font-size: 110%;
+ border-width: 1px 1px 1px 1px;
+ border-spacing: 2px;
+ border-style: outset outset outset outset;
+ border-collapse: collapse;
+}
+
+table.contracts_wtt th, table.contracts_wtt tr  {
+	min-width:400px;
+}
+table.contracts_wtt td {
+	border-style: outset outset outset outset;
+	min-width:400px;
+}
+/*
+.contracts_table b {
+	color:black;
+}*/
+
+table.contracts_table td, table.contracts_table tr, table.contracts_table th {
+	border-color: #777;
+}
+
+table.fancy td, table.fancy tr, table.fancy th {
+	border-color: white;
+}
+
+table.contracts_table{
+ border-width: 1px 1px 1px 1px;
+ border-spacing: 2px;
+ border-style: outset outset outset outset;
+ border-collapse: collapse;
+}
+
+table.contracts_table tr.alt th, table.contracts_table tr.alt td {
+ background-color: #001122;
+ border-width: 1px 1px 1px 1px;
+	padding: 2px 5px 2px 5px;
+	border-style: outset outset outset outset;
+	white-space:nowrap; 
+}
+
+table.contracts_table tr.main th, table.contracts_table tr.main td
+{
+ background-color: #112233;
+ border-width: 1px 1px 1px 1px;
+	padding: 2px 5px 2px 5px;
+	border-style: outset outset outset outset;
+	white-space:nowrap; 
+}
+
+.sthru {
+    text-decoration: line-through;
+	 color: #AAAAAA;
+}
+
+.enabled_page {
+    font-weight: bold;
+}
+
+table.contracts_table tr.hover:hover th[scope=row], table.contracts_table tr.hover:hover td
+{
+  background-color: #224466;
+}
+
+
+td.failedcontractstatus {
+	font-weight: bold;
+	color: #990000;
+	text-align: center;
+}
+
+div.skills_header{
+	font-size:93%; 
+	border-spacing: 10px; 
+	display:inline-block; 
+	line-height: 1;
+}
+
+div.api_input {
+ width: 700px;
+ display:inline-block;
+ float:left;
+}
+
+div.api_input label {
+width: 125px;
+}
+
+table.skills_legends {
+	font-size:75%; 
+	position: absolute;
+	top: 40px;
+	left: 700px;
+}
+
+table.skills_legends td {
+	white-space: nowrap;
+}
+
+table.skills_legends th {
+	font-weight: bold;
+}
+
+div.content { 
+	position: relative; 
+}
+
+span.sortingby {
+font-size:90%;
+letter-spacing:-1px;
+}
+
+.hidden {
+ display:none;
+}
+
+a.tooltip {
+ position: relative; 
+ cursor: default;
+}
+
+a.tooltip span {   
+ /* hidden desc span */
+ position: absolute;
+ background-color: white;
+ text-decoration: none;
+ visibility: hidden;
+ width: 200px; 
+}
+
+
+a.tooltip:hover span { 
+ /* ... style when hovered (shows up) */
+ visibility: visible;
+ color: black;
+ text-decoration: none;
+ background-color: #dddddd;
+ top: 15px;     /* dist from top */
+ left: 4px;     /* dist from left side of parent - do not remove */
+ padding: 2px; 
+ z-index: 50;   /* causes it to pop over other objects */
+ border: 1px solid black;
+}
+
+a.skill_tooltip, a.skill_tooltip:visited {
+ position: relative; 
+ cursor: default;
+ color: #91CCFF;
+}
+
+a.skill_tooltip:hover, a.skill_tooltip:visited:hover {
+ color: #fff;
+ background: none;
+ border: 0px;
+}
+
+a.skill_tooltip span {   
+ /* hidden desc span */
+ position: absolute;
+ background-color: white;
+ text-decoration: none;
+ visibility: hidden;
+ width: 200px; 
+}
+
+a.skill_tooltip:hover span { 
+ /* ... style when hovered (shows up) */
+ visibility: visible;
+ color: black;
+ text-decoration: none;
+ background-color: #dddddd;
+ top: 23px;     /* dist from top */
+ left: 0px;     /* dist from left side of parent - do not remove */
+ padding: 2px; 
+ z-index: 50;   /* causes it to pop over other objects */
+ border: 1px solid black;
+}
+
+a.missingskill:hover {
+ background-color: red;
+}
+
+a.imglink, #medrect a, #linkscol a, #statscol a {
+	border: 0px none;
+}
+
+a.imglink img, #medrect a img, #linkscol a img, #statscol a img {
+	border: 0px none;
+}
+
+table.fancy th {
+	padding: 1px 1px 1px 1px;
+}
+
+table.fancy td {
+	padding: 2px 4px 2px 4px;
+	font-size:95%;
+}
+
+table.fancy
+{
+ border-width: 1px 1px 1px 1px;
+ border-spacing: 2px;
+ border-style: outset outset outset outset;
+ border-collapse: collapse;
+}
+
+table.fancy2
+{
+ border-width: 1px 1px 1px 1px;
+ border-spacing: 2px;
+ border-style: outset outset outset outset;
+ border-collapse: collapse;
+}
+
+table.fittingskills th {
+	padding: 1px 1px 1px 1px;
+}
+table.fittingskills td {
+	padding: 2px 4px 2px 4px;
+	border-style: outset outset outset outset;
+ border-width: 1px 1px 1px 1px;
+ font-size:95%;
+}
+
+table.fittingskills
+{
+ border-width: 1px 1px 1px 1px;
+ border-spacing: 2px;
+ border-style: outset outset outset outset;
+ border-collapse: collapse;
+}
+
+
+div.skilllist {
+	vertical-align: top;
+	display: inline-block;
+	width: 250px;
+}
+
+label {
+ padding-top: 2px;
+  font-size: 13px;
+  padding-right: 10px;
+  font-weight: bold;
+  float: left;
+  text-align: right;
+}
+
+table.skills_table th, tr, td {
+ padding: 2px;
+}
+
+table.skills_table h4 {
+ font-size: 13px;
+}
+
+hr {
+ border-bottom: 1px solid #777;
+ margin-top: 0px;
+ margin: 1px;
+}
+
+table.fancy tr.alt th, table.fancy tr.alt td
+{
+border-color: #777;
+ background-color: #001122;
+ border-width: 1px 1px 1px 1px;
+ padding: 2px 5px 2px 5px;
+ border-style: outset outset outset outset;
+}
+
+table {
+border-color: #777;
+}
+
+table.fancy tr.main th, table.fancy tr.main td
+{
+border-color: #777;
+ background-color: #112233;
+ border-width: 1px 1px 1px 1px;
+	padding: 2px 5px 2px 5px;
+	border-style: outset outset outset outset;
+}
+
+table.fancy tr:hover th[scope=row], table.fancy tr:hover td
+{
+  background-color: #224466;
+}
+
+.audit_body {
+	min-width: 1150px;
+	/*width: 940px;*/
+}
+
+/*****************
+	TEXT STYLES
+******************/
+
+h2 {
+	font: normal 1.5em helvetica, arial, sans-serif;
+	margin: .25em 0;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: .5em 0;
+	color: #fff;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	color: #0c0;
+	text-decoration: none;
+	/*border-bottom: 1px solid #999;*/
+}
+
+a:hover, a:visited:hover {
+	background-color: #090;
+	color: #fff;
+	border-bottom: 1px solid #090;
+}
+
+img {
+ border: 0px none;
+}
+
+a:visited {
+	color: #070;
+}
+
+h2 {
+	border-bottom: 1px dotted #ccc;
+	font: 95% "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	margin: 15px 0 2px 0;
+	padding-bottom: 2px;
+}
+
+h3 {
+	border-bottom: 1px dotted #eee;
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 0;
+}
+
+p, li {
+	font: 90%/175% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	letter-spacing: -1px;
+}
+
+input, .btn {
+	background-color: #223;
+	border: #aaa 1px solid;
+	color: #eee;
+	font-weight: bold;
+}
+
+th,td,tr {
+	color: #eee;
+	font-size: 95%;
+}
+
+
+body {
+   margin: 10px;
+	color: #eee;
+	font-family: helvetica, arial, sans-serif; /* : normal 90%,  */
+ 	font-size: 97%;
+	background-color: #000;
+	line-height: 1;
+}
+
+div.contacts p {
+	height: 48px;
+	width: 170px;
+	display: inline-block;
+	overflow: hidden;
+	word-break: break-word;
+	position: relative;
+	margin: 1px;
+}
+
+div.contacts img.portrait {
+	height: 48px;
+	width: 48px;
+	right: 0px;
+	position: absolute;
+	opacity: .5;
+}
+
+div.contacts p:hover  img.portrait {
+	opacity: 1;
+}
+
+div.contacts > p > span {
+	vertical-align: top;
+	overflow: hidden;
+}
+
+div.contracts  a.showinfo:hover img.icon, a.showinfo_img:hover img.icon {
+	visibility: hidden !important;
+	/*visibility: visible;
+	right: 5px;
+	z-index: 10;*/
+}
+
+#showinfo_desc {
+	border:1px solid blue; 
+	padding: 3px;
+}
+
+div.showinfo_header > img{
+	float: left; 
+}
+
+div.showinfo_header > span{
+	float: right; 
+	top: 0px; 
+	padding-right: 9px;
+	font-weight: bold;
+}
+
+div.showinfo_header > h2 {
+ margin-top: 1px;
+ font-size:160%; 
+ width: 100%;
+ clear: both;
+}
+
+div.showinfo_body {
+	font-size:80%;
+	width: 350px;
+}
+
+div.showinfo_body > div > table {
+	width: 100%;
+}
+
+div.autoscale {
+	font-weight:bold;
+	display: inline-block;
+	width: 100%;
+}
+
+div.autoscale > span {
+	vertical-align: bottom;
+}
+
+img.showinfo_logo {
+	position: absolute;
+	top: 0px;
+	left: 235px;
+
+	margin-top: 3px;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	z-index: -1;
+}
+
+div.allyinfo {
+	display: inline-block;
+	z-index: 1;
+	
+}
+
+table.inallyinfo {
+	position: absolute;
+	float: right;
+	width: 180px;
+	left: 170px;
+	top: 60px;
+	background-color: rgb(22, 22, 22);
+   background-color: rgba(22, 22, 22, 0.6);
+}
+
+div.showinfo_bio {
+	width: 342px;
+	border:1px solid blue; 
+	padding: 4px;
+	margin-top: 15px;
+	background: #111;
+}
+
+div.showinfo_bio > span.bio_header {
+	position: relative;
+	top: -9px;
+	padding-left: 4px;
+	font-weight:bold;
+	display: block;
+}
+
+div.floating_showinfo {
+	width: 380px;
+	height: 500px;
+	background-color: #111111;
+	position: fixed;
+	z-index:100;
+	border: 2px solid white;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+img.loading-centered {
+	display: block;
+	position: absolute;
+	top: 170px;
+   left: 140px;
+}
+
+span.showinfo_title {
+	display: none;
+}
+
+div.showinfo_titlebar {
+	height: 18px;
+	width: 378px;
+	padding-top: 2px;
+	padding-left: 2px;
+	border-bottom: 2px solid #DBDBDB;
+	color: white;
+	background-color: #001B85;
+	font-weight: bold;
+	cursor: move;
+	overflow: hidden;
+	word-wrap: break-word;
+	white-space: nowrap;
+}
+
+.orange{
+	background-color: #B38A2D; width: 15px; text-align:center; color:white;
+}
+.blue{
+	background-color: #0A3E91; width: 15px; text-align:center; color:white;
+}
+
+.green{
+	background-color: #28483d; width: 15px; text-align:center; color:white;
+}
+
+.red{
+	background-color: #4f2121; width: 15px; text-align:center; color:white;
+}
+
+.level5Color{
+	color: black;
+	background-color:#11FF00;
+}
+
+.level4Color{
+	color: black;
+	background-color:#00AA00;
+}
+
+.level3Color{
+	color: black;
+	background-color:#BBBB44;
+}
+.level2Color{
+	color: black;
+	background-color:#FFCC00;
+}
+.level1Color{
+	color: black;
+	background-color:#FF3333;
+}
+
+.level0Color{
+	color: black;
+	background-color:#AAAAAA;
+}
+
+.levelNoneColor{
+	color: white;
+}
+
+div.showinfo_titlebar > a.exitbutton {
+	right: 1px;
+	cursor: pointer;
+	padding: 1px;
+}
+
+div.floating_showinfo_body {
+	position: absolute;
+	top: 18px;
+	margin: 3px;
+	width: 100%;
+	height: 479px;
+	overflow: auto;
+}

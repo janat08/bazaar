@@ -1,0 +1,770 @@
+<template name="skillsPage"> 
+	<div class="audit_body">
+		&nbsp;
+		
+		<!-- Left hand side skill list-->
+		
+		<div class="skilllist">
+			{{#each trainingSkill}}
+				<b>Training : </b> {{skillName}}
+			{{/each}}
+			<table class="attrs">
+				<tbody>
+					<tr>
+						<th>INT</th>
+						<th>PER</th>
+						<th>CHA</th>
+						<th>WILL</th>
+						<th>MEM</th>
+					</tr>
+					<tr>
+						{{#each attribute}}
+							<td>{{attribute}}</td>
+						{{/each}}
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<table class="skill_list" width="100%">
+				<tbody>
+					{{#each skillList}}
+							<td>{{attribute}}</td>
+						<tr class="header">
+							<th scope="row">{{skillName}}</th>
+							<td>
+								{{skillValue}} SP
+								<br>
+								{{totalSkills}} skills total
+							</td>
+						</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+		
+		<!--Right Hand Sie Skill Table-->
+		
+		<table class="skills_table">
+			<tbody>
+				<tr valign="top">
+				
+					<!--
+					Radical skills tab
+					RadicalSevenColumnSkill, RadicalSixColumnSkill, RadicalFiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into RadicalFiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>Radical Skills</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each RadicalSevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue RadicalColumnSkillValue1}}">{{RadicalColumnSkillValue1}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue2}}">{{RadicalColumnSkillValue2}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue3}}">{{RadicalColumnSkillValue3}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue4}}">{{RadicalColumnSkillValue4}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue5}}">{{RadicalColumnSkillValue5}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue6}}">{{RadicalColumnSkillValue6}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue7}}">{{RadicalColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each RadicalSixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue RadicalColumnSkillValue1}}">{{RadicalColumnSkillValue1}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue2}}">{{RadicalColumnSkillValue2}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue3}}">{{RadicalColumnSkillValue3}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue4}}">{{RadicalColumnSkillValue4}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue5}}">{{RadicalColumnSkillValue5}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue6}}">{{RadicalColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each RadicalFiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue RadicalColumnSkillValue1}}">{{RadicalColumnSkillValue1}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue2}}">{{RadicalColumnSkillValue2}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue3}}">{{RadicalColumnSkillValue3}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue4}}">{{RadicalColumnSkillValue4}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue5}}">{{RadicalColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each RadicalFourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue RadicalColumnSkillValue1}}">{{RadicalColumnSkillValue1}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue2}}">{{RadicalColumnSkillValue2}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue3}}">{{RadicalColumnSkillValue3}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue4}}">{{RadicalColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each RadicalThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue RadicalColumnSkillValue1}}">{{RadicalColumnSkillValue1}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue2}}">{{RadicalColumnSkillValue2}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue3}}">{{RadicalColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each RadicalTwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue RadicalColumnSkillValue1}}">{{RadicalColumnSkillValue1}}</td>
+										<td class="{{setColorValue RadicalColumnSkillValue2}}">{{RadicalColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each RadicalOneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue RadicalColumnSkillValue1}}">{{RadicalColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+					
+					<!--
+					Support skills tab
+					SupportSevenColumnSkill, SupportSixColumnSkill, SupportFiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into SupportFiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>Support Skills</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each SupportSevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue SupportColumnSkillValue1}}">{{SupportColumnSkillValue1}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue2}}">{{SupportColumnSkillValue2}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue3}}">{{SupportColumnSkillValue3}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue4}}">{{SupportColumnSkillValue4}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue5}}">{{SupportColumnSkillValue5}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue6}}">{{SupportColumnSkillValue6}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue7}}">{{SupportColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each SupportSixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue SupportColumnSkillValue1}}">{{SupportColumnSkillValue1}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue2}}">{{SupportColumnSkillValue2}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue3}}">{{SupportColumnSkillValue3}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue4}}">{{SupportColumnSkillValue4}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue5}}">{{SupportColumnSkillValue5}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue6}}">{{SupportColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each SupportFiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue SupportColumnSkillValue1}}">{{SupportColumnSkillValue1}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue2}}">{{SupportColumnSkillValue2}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue3}}">{{SupportColumnSkillValue3}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue4}}">{{SupportColumnSkillValue4}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue5}}">{{SupportColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each SupportFourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue SupportColumnSkillValue1}}">{{SupportColumnSkillValue1}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue2}}">{{SupportColumnSkillValue2}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue3}}">{{SupportColumnSkillValue3}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue4}}">{{SupportColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each SupportThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue SupportColumnSkillValue1}}">{{SupportColumnSkillValue1}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue2}}">{{SupportColumnSkillValue2}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue3}}">{{SupportColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each SupportTwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue SupportColumnSkillValue1}}">{{SupportColumnSkillValue1}}</td>
+										<td class="{{setColorValue SupportColumnSkillValue2}}">{{SupportColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each SupportOneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue SupportColumnSkillValue1}}">{{SupportColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+					
+					<!--
+					T2 skills tab
+					T2SevenColumnSkill, T2SixColumnSkill, T2FiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into T2FiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>T2 Skills</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each T2SevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue T2ColumnSkillValue1}}">{{T2ColumnSkillValue1}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue2}}">{{T2ColumnSkillValue2}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue3}}">{{T2ColumnSkillValue3}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue4}}">{{T2ColumnSkillValue4}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue5}}">{{T2ColumnSkillValue5}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue6}}">{{T2ColumnSkillValue6}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue7}}">{{T2ColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each T2SixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue T2ColumnSkillValue1}}">{{T2ColumnSkillValue1}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue2}}">{{T2ColumnSkillValue2}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue3}}">{{T2ColumnSkillValue3}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue4}}">{{T2ColumnSkillValue4}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue5}}">{{T2ColumnSkillValue5}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue6}}">{{T2ColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each T2FiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue T2ColumnSkillValue1}}">{{T2ColumnSkillValue1}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue2}}">{{T2ColumnSkillValue2}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue3}}">{{T2ColumnSkillValue3}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue4}}">{{T2ColumnSkillValue4}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue5}}">{{T2ColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each T2FourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue T2ColumnSkillValue1}}">{{T2ColumnSkillValue1}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue2}}">{{T2ColumnSkillValue2}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue3}}">{{T2ColumnSkillValue3}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue4}}">{{T2ColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each T2ThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue T2ColumnSkillValue1}}">{{T2ColumnSkillValue1}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue2}}">{{T2ColumnSkillValue2}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue3}}">{{T2ColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each T2TwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue T2ColumnSkillValue1}}">{{T2ColumnSkillValue1}}</td>
+										<td class="{{setColorValue T2ColumnSkillValue2}}">{{T2ColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each T2OneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue T2ColumnSkillValue1}}">{{T2ColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+					
+					<!--
+					Leadership skills tab
+					LeadershipSevenColumnSkill, LeadershipSixColumnSkill, LeadershipFiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into LeadershipFiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>Leadership</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each LeadershipSevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue LeadershipColumnSkillValue1}}">{{LeadershipColumnSkillValue1}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue2}}">{{LeadershipColumnSkillValue2}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue3}}">{{LeadershipColumnSkillValue3}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue4}}">{{LeadershipColumnSkillValue4}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue5}}">{{LeadershipColumnSkillValue5}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue6}}">{{LeadershipColumnSkillValue6}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue7}}">{{LeadershipColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each LeadershipSixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue LeadershipColumnSkillValue1}}">{{LeadershipColumnSkillValue1}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue2}}">{{LeadershipColumnSkillValue2}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue3}}">{{LeadershipColumnSkillValue3}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue4}}">{{LeadershipColumnSkillValue4}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue5}}">{{LeadershipColumnSkillValue5}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue6}}">{{LeadershipColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each LeadershipFiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue LeadershipColumnSkillValue1}}">{{LeadershipColumnSkillValue1}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue2}}">{{LeadershipColumnSkillValue2}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue3}}">{{LeadershipColumnSkillValue3}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue4}}">{{LeadershipColumnSkillValue4}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue5}}">{{LeadershipColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each LeadershipFourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue LeadershipColumnSkillValue1}}">{{LeadershipColumnSkillValue1}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue2}}">{{LeadershipColumnSkillValue2}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue3}}">{{LeadershipColumnSkillValue3}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue4}}">{{LeadershipColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each LeadershipThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue LeadershipColumnSkillValue1}}">{{LeadershipColumnSkillValue1}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue2}}">{{LeadershipColumnSkillValue2}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue3}}">{{LeadershipColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each LeadershipTwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue LeadershipColumnSkillValue1}}">{{LeadershipColumnSkillValue1}}</td>
+										<td class="{{setColorValue LeadershipColumnSkillValue2}}">{{LeadershipColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each LeadershipOneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue LeadershipColumnSkillValue1}}">{{LeadershipColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+					
+					<!--
+					CapitalShips skills tab
+					CapitalShipsSevenColumnSkill, CapitalShipsSixColumnSkill, CapitalShipsFiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into CapitalShipsFiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>Capital Ships</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each CapitalShipsSevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue1}}">{{CapitalShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue2}}">{{CapitalShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue3}}">{{CapitalShipsColumnSkillValue3}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue4}}">{{CapitalShipsColumnSkillValue4}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue5}}">{{CapitalShipsColumnSkillValue5}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue6}}">{{CapitalShipsColumnSkillValue6}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue7}}">{{CapitalShipsColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each CapitalShipsSixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue1}}">{{CapitalShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue2}}">{{CapitalShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue3}}">{{CapitalShipsColumnSkillValue3}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue4}}">{{CapitalShipsColumnSkillValue4}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue5}}">{{CapitalShipsColumnSkillValue5}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue6}}">{{CapitalShipsColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each CapitalShipsFiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue1}}">{{CapitalShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue2}}">{{CapitalShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue3}}">{{CapitalShipsColumnSkillValue3}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue4}}">{{CapitalShipsColumnSkillValue4}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue5}}">{{CapitalShipsColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each CapitalShipsFourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue1}}">{{CapitalShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue2}}">{{CapitalShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue3}}">{{CapitalShipsColumnSkillValue3}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue4}}">{{CapitalShipsColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each CapitalShipsThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue1}}">{{CapitalShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue2}}">{{CapitalShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue3}}">{{CapitalShipsColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each CapitalShipsTwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue1}}">{{CapitalShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue2}}">{{CapitalShipsColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each CapitalShipsOneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue CapitalShipsColumnSkillValue1}}">{{CapitalShipsColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+					</tr>
+					<tr valign="top">
+					<!--
+					Industry skills tab
+					IndustrySevenColumnSkill, IndustrySixColumnSkill, IndustryFiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into IndustryFiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>Industry</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each IndustrySevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue IndustryColumnSkillValue1}}">{{IndustryColumnSkillValue1}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue2}}">{{IndustryColumnSkillValue2}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue3}}">{{IndustryColumnSkillValue3}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue4}}">{{IndustryColumnSkillValue4}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue5}}">{{IndustryColumnSkillValue5}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue6}}">{{IndustryColumnSkillValue6}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue7}}">{{IndustryColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each IndustrySixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue IndustryColumnSkillValue1}}">{{IndustryColumnSkillValue1}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue2}}">{{IndustryColumnSkillValue2}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue3}}">{{IndustryColumnSkillValue3}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue4}}">{{IndustryColumnSkillValue4}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue5}}">{{IndustryColumnSkillValue5}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue6}}">{{IndustryColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each IndustryFiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue IndustryColumnSkillValue1}}">{{IndustryColumnSkillValue1}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue2}}">{{IndustryColumnSkillValue2}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue3}}">{{IndustryColumnSkillValue3}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue4}}">{{IndustryColumnSkillValue4}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue5}}">{{IndustryColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each IndustryFourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue IndustryColumnSkillValue1}}">{{IndustryColumnSkillValue1}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue2}}">{{IndustryColumnSkillValue2}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue3}}">{{IndustryColumnSkillValue3}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue4}}">{{IndustryColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each IndustryThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue IndustryColumnSkillValue1}}">{{IndustryColumnSkillValue1}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue2}}">{{IndustryColumnSkillValue2}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue3}}">{{IndustryColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each IndustryTwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue IndustryColumnSkillValue1}}">{{IndustryColumnSkillValue1}}</td>
+										<td class="{{setColorValue IndustryColumnSkillValue2}}">{{IndustryColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each IndustryOneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue IndustryColumnSkillValue1}}">{{IndustryColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+					
+					<!--
+					Weapons skills tab
+					WeaponsSevenColumnSkill, WeaponsSixColumnSkill, WeaponsFiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into WeaponsFiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>Weapons</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each WeaponsSevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue WeaponsColumnSkillValue1}}">{{WeaponsColumnSkillValue1}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue2}}">{{WeaponsColumnSkillValue2}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue3}}">{{WeaponsColumnSkillValue3}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue4}}">{{WeaponsColumnSkillValue4}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue5}}">{{WeaponsColumnSkillValue5}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue6}}">{{WeaponsColumnSkillValue6}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue7}}">{{WeaponsColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each WeaponsSixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue WeaponsColumnSkillValue1}}">{{WeaponsColumnSkillValue1}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue2}}">{{WeaponsColumnSkillValue2}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue3}}">{{WeaponsColumnSkillValue3}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue4}}">{{WeaponsColumnSkillValue4}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue5}}">{{WeaponsColumnSkillValue5}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue6}}">{{WeaponsColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each WeaponsFiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue WeaponsColumnSkillValue1}}">{{WeaponsColumnSkillValue1}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue2}}">{{WeaponsColumnSkillValue2}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue3}}">{{WeaponsColumnSkillValue3}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue4}}">{{WeaponsColumnSkillValue4}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue5}}">{{WeaponsColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each WeaponsFourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue WeaponsColumnSkillValue1}}">{{WeaponsColumnSkillValue1}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue2}}">{{WeaponsColumnSkillValue2}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue3}}">{{WeaponsColumnSkillValue3}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue4}}">{{WeaponsColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each WeaponsThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue WeaponsColumnSkillValue1}}">{{WeaponsColumnSkillValue1}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue2}}">{{WeaponsColumnSkillValue2}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue3}}">{{WeaponsColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each WeaponsTwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue WeaponsColumnSkillValue1}}">{{WeaponsColumnSkillValue1}}</td>
+										<td class="{{setColorValue WeaponsColumnSkillValue2}}">{{WeaponsColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each WeaponsOneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue WeaponsColumnSkillValue1}}">{{WeaponsColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+					
+					<!--
+					Modules skills tab
+					ModulesSevenColumnSkill, ModulesSixColumnSkill, ModulesFiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into ModulesFiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>Modules</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each ModulesSevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ModulesColumnSkillValue1}}">{{ModulesColumnSkillValue1}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue2}}">{{ModulesColumnSkillValue2}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue3}}">{{ModulesColumnSkillValue3}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue4}}">{{ModulesColumnSkillValue4}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue5}}">{{ModulesColumnSkillValue5}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue6}}">{{ModulesColumnSkillValue6}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue7}}">{{ModulesColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ModulesSixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ModulesColumnSkillValue1}}">{{ModulesColumnSkillValue1}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue2}}">{{ModulesColumnSkillValue2}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue3}}">{{ModulesColumnSkillValue3}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue4}}">{{ModulesColumnSkillValue4}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue5}}">{{ModulesColumnSkillValue5}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue6}}">{{ModulesColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ModulesFiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ModulesColumnSkillValue1}}">{{ModulesColumnSkillValue1}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue2}}">{{ModulesColumnSkillValue2}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue3}}">{{ModulesColumnSkillValue3}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue4}}">{{ModulesColumnSkillValue4}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue5}}">{{ModulesColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ModulesFourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ModulesColumnSkillValue1}}">{{ModulesColumnSkillValue1}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue2}}">{{ModulesColumnSkillValue2}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue3}}">{{ModulesColumnSkillValue3}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue4}}">{{ModulesColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ModulesThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ModulesColumnSkillValue1}}">{{ModulesColumnSkillValue1}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue2}}">{{ModulesColumnSkillValue2}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue3}}">{{ModulesColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ModulesTwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ModulesColumnSkillValue1}}">{{ModulesColumnSkillValue1}}</td>
+										<td class="{{setColorValue ModulesColumnSkillValue2}}">{{ModulesColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ModulesOneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ModulesColumnSkillValue1}}">{{ModulesColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+					
+					<!--
+					Ships skills tab
+					ShipsSevenColumnSkill, ShipsSixColumnSkill, ShipsFiveColumnSkill, etc.. are the variables which contain the skill details with no of values in each variable varying acording to no of colums to be shown
+					
+					For example Frigate will go into ShipsFiveColumnSkill					
+						
+					-->
+					
+					<td class="skills_tab">
+						<h4>Ships</h4><hr>
+
+						<table style="font-size:88%">
+							<tbody>
+								{{#each ShipsSevenColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ShipsColumnSkillValue1}}">{{ShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue2}}">{{ShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue3}}">{{ShipsColumnSkillValue3}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue4}}">{{ShipsColumnSkillValue4}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue5}}">{{ShipsColumnSkillValue5}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue6}}">{{ShipsColumnSkillValue6}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue7}}">{{ShipsColumnSkillValue7}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ShipsSixColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ShipsColumnSkillValue1}}">{{ShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue2}}">{{ShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue3}}">{{ShipsColumnSkillValue3}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue4}}">{{ShipsColumnSkillValue4}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue5}}">{{ShipsColumnSkillValue5}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue6}}">{{ShipsColumnSkillValue6}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ShipsFiveColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ShipsColumnSkillValue1}}">{{ShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue2}}">{{ShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue3}}">{{ShipsColumnSkillValue3}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue4}}">{{ShipsColumnSkillValue4}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue5}}">{{ShipsColumnSkillValue5}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ShipsFourColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ShipsColumnSkillValue1}}">{{ShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue2}}">{{ShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue3}}">{{ShipsColumnSkillValue3}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue4}}">{{ShipsColumnSkillValue4}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ShipsThreeColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ShipsColumnSkillValue1}}">{{ShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue2}}">{{ShipsColumnSkillValue2}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue3}}">{{ShipsColumnSkillValue3}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ShipsTwoColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ShipsColumnSkillValue1}}">{{ShipsColumnSkillValue1}}</td>
+										<td class="{{setColorValue ShipsColumnSkillValue2}}">{{ShipsColumnSkillValue2}}</td>
+									</tr>
+								{{/each}}
+								<br/>
+								{{#each ShipsOneColumnSkill}}
+									<tr>
+										<td class="{{setColorValue ShipsColumnSkillValue1}}">{{ShipsColumnSkillValue1}}</td>
+									</tr>
+								{{/each}}
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			
+			
+			
+			</tbody>
+		</table>
+
+	</div>
+</template>
